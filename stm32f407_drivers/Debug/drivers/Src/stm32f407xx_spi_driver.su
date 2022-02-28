@@ -1,0 +1,12 @@
+stm32f407xx_spi_driver.c:4:6:SPI_PLCK_Control	16	static
+stm32f407xx_spi_driver.c:39:6:SPI_Init	16	static
+stm32f407xx_spi_driver.c:85:6:SPI_DeInit	16	static
+stm32f407xx_spi_driver.c:101:9:SPI_GetFlagStatus	16	static
+stm32f407xx_spi_driver.c:111:6:SPI_SendData	24	static
+stm32f407xx_spi_driver.c:140:6:SPI_ReceiveData	24	static
+stm32f407xx_spi_driver.c:174:6:SPI_PeripheralControlTest	16	static
+stm32f407xx_spi_driver.c:186:6:SPI_PeripheralControl	16	static
+stm32f407xx_spi_driver.c:199:6:SPI_SSIConfig	16	static
+stm32f407xx_spi_driver.c:211:6:SPI_SSOEConfig	16	static
+stm32f407xx_spi_driver.c:223:9:Busy_Check	16	static
+stm32f407xx_spi_driver.c:233:6:Clear_and_Push	24	static

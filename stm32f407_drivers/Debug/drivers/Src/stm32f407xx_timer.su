@@ -1,0 +1,4 @@
+stm32f407xx_timer.c:3:6:TIM10_11_13_14_CLKEnable	16	static
+stm32f407xx_timer.c:46:6:TIM2_5_CLKEnable	16	static
+stm32f407xx_timer.c:90:6:PWM2_5_Init	16	static
+stm32f407xx_timer.c:174:6:ServoAngle	32	static
