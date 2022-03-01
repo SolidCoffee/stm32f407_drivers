@@ -1,20 +1,10 @@
-20:19:39 **** Incremental Build of configuration Debug for project stm32f407_drivers ****
+20:39:59 **** Incremental Build of configuration Debug for project stm32f407_drivers ****
 make -j16 all 
-arm-none-eabi-gcc "../Src/DualTumbstick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/Embedded-C/My_workspace/stm32f407_drivers/stm32f407_drivers/stm32f407_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/DualTumbstick.d" -MT"Src/DualTumbstick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/DualTumbstick.o"
-arm-none-eabi-gcc -o "stm32f407_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Embedded-C\My_workspace\stm32f407_drivers\stm32f407_drivers\stm32f407_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f407_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f407_drivers.elf
- 
 arm-none-eabi-size   stm32f407_drivers.elf 
-arm-none-eabi-objdump -h -S  stm32f407_drivers.elf  > "stm32f407_drivers.list"
-arm-none-eabi-objcopy  -O binary  stm32f407_drivers.elf  "stm32f407_drivers.bin"
    text	   data	    bss	    dec	    hex	filename
-   6140	     20	   1572	   7732	   1e34	stm32f407_drivers.elf
+   6132	     20	   1572	   7724	   1e2c	stm32f407_drivers.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f407_drivers.bin
- 
-Finished building: stm32f407_drivers.list
- 
 
-20:19:40 Build Finished. 0 errors, 0 warnings. (took 491ms)
+20:39:59 Build Finished. 0 errors, 0 warnings. (took 205ms)
 
