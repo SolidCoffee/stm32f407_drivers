@@ -55,9 +55,8 @@ void ADC_Init(ADC_RegDef_t *pADCHandle);
 void ADC_Init_LR(ADC_RegDef_t *pADCHandle);
 void ADC_Init_UD(ADC_RegDef_t *pADCHandle);
 void ADC_Wrist(ADC_RegDef_t *pADCHandle);
-void ADC_Hand(ADC_RegDef_t *pADCHandle);
 
-uint32_t EdgeCondition(uint32_t val, uint8_t Hand_or_No);
+uint32_t EdgeCondition(uint32_t val);
 
 uint8_t LR_Inc_Flg;
 uint8_t UD_Inc_Flg;

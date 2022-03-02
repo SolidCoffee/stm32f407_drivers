@@ -21,7 +21,7 @@ void delay(void)
 uint32_t x=10;
 uint32_t y=10;
 uint32_t j=10;
-uint32_t s=90;
+uint32_t s=10;
 uint32_t checker=0;
 
 void ServoHandle(void)

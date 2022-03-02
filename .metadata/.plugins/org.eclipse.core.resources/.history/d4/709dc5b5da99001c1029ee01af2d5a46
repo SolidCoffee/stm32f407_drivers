@@ -21,7 +21,7 @@ void delay(void)
 uint32_t x=10;
 uint32_t y=10;
 uint32_t j=10;
-uint32_t s=90;
+uint32_t s=10;
 uint32_t checker=0;
 
 void ServoHandle(void)
@@ -73,13 +73,13 @@ void ServoHandle(void)
 	{
 		s++;
 		s=EdgeCondition(s,HAND);
-		ServoAngle(TIM4, s, GRIP);
+		ServoAngle(TIM4, S, GRIP);
 	}
 	else if(Hand_Dec_Flg)
 	{
 		s--;
 		s=EdgeCondition(s,HAND);
-		ServoAngle(TIM4, s, GRIP);
+		ServoAngle(TIM4, S, GRIP);
 	}
 	Hand_Inc_Flg = 0; Hand_Dec_Flg=0;
 }

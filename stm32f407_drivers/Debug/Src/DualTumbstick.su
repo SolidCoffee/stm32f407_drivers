@@ -10,8 +10,8 @@ stm32f407xx_gpio_driver.h:392:6:GPIO_IRQITConfig	16	static
 stm32f407xx_gpio_driver.h:432:6:GPIO_IRQPriorityConfig	24	static
 stm32f407xx_gpio_driver.h:442:6:GPIO_IRQHandling	16	static
 DualTumbstick.c:16:6:delay	16	static
-DualTumbstick.c:26:6:ServoHandle	8	static
-DualTumbstick.c:72:6:GPIOInits	24	static
-DualTumbstick.c:98:6:PWM_GPIOInits	24	static
-DualTumbstick.c:121:6:PWMTIM	32	static
-DualTumbstick.c:147:5:main	8	static
+DualTumbstick.c:27:6:ServoHandle	8	static
+DualTumbstick.c:87:6:GPIOInits	24	static
+DualTumbstick.c:113:6:PWM_GPIOInits	24	static
+DualTumbstick.c:139:6:PWMTIM	32	static
+DualTumbstick.c:169:5:main	8	static

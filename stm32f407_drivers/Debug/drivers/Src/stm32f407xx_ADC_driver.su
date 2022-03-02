@@ -5,4 +5,5 @@ stm32f407xx_ADC_driver.c:48:6:ADC_Init	16	static
 stm32f407xx_ADC_driver.c:85:6:ADC_Init_LR	16	static
 stm32f407xx_ADC_driver.c:132:6:ADC_Init_UD	16	static
 stm32f407xx_ADC_driver.c:179:6:ADC_Wrist	16	static
-stm32f407xx_ADC_driver.c:226:10:EdgeCondition	16	static
+stm32f407xx_ADC_driver.c:226:6:ADC_Hand	16	static
+stm32f407xx_ADC_driver.c:273:10:EdgeCondition	16	static

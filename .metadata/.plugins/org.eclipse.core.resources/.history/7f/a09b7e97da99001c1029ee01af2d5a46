@@ -21,7 +21,6 @@ void delay(void)
 uint32_t x=10;
 uint32_t y=10;
 uint32_t j=10;
-uint32_t s=90;
 uint32_t checker=0;
 
 void ServoHandle(void)
@@ -30,13 +29,13 @@ void ServoHandle(void)
 	if(UD_Inc_Flg)
 	{
 		x++;
-		x=EdgeCondition(x,NOTHAND);
+		x=EdgeCondition(x);
 		ServoAngle(TIM4, x, MID);
 	}
 	else if(UD_Dec_Flg)
 	{
 		x--;
-		x=EdgeCondition(x,NOTHAND);
+		x=EdgeCondition(x);
 		ServoAngle(TIM4, x, MID);
 	}
 	UD_Inc_Flg=0; UD_Dec_Flg=0;
@@ -44,13 +43,13 @@ void ServoHandle(void)
 	if(LR_Inc_Flg)
 	{
 		y++;
-		y=EdgeCondition(y,NOTHAND);
+		y=EdgeCondition(y);
 		ServoAngle(TIM4, y, BOTTOM);
 	}
 	else if(LR_Dec_Flg)
 	{
 		y--;
-		y=EdgeCondition(y,NOTHAND);
+		y=EdgeCondition(y);
 		ServoAngle(TIM4, y, BOTTOM);
 	}
 	LR_Inc_Flg=0; LR_Dec_Flg=0;
@@ -58,30 +57,16 @@ void ServoHandle(void)
 	if(Wrist_Inc_Flg)
 	{
 		j++;
-		j=EdgeCondition(j,NOTHAND);
+		j=EdgeCondition(j);
 		ServoAngle(TIM4, j,TOP);
 	}
 	else if(Wrist_Dec_Flg)
 	{
 		j--;
-		j=EdgeCondition(j,NOTHAND);
+		j=EdgeCondition(j);
 		ServoAngle(TIM4, j,TOP);
 	}
 	Wrist_Inc_Flg=0; Wrist_Dec_Flg=0;
-
-	if(Hand_Inc_Flg)
-	{
-		s++;
-		s=EdgeCondition(s,HAND);
-		ServoAngle(TIM4, s, GRIP);
-	}
-	else if(Hand_Dec_Flg)
-	{
-		s--;
-		s=EdgeCondition(s,HAND);
-		ServoAngle(TIM4, s, GRIP);
-	}
-	Hand_Inc_Flg = 0; Hand_Dec_Flg=0;
 }
 
 void GPIOInits(void)
@@ -106,8 +91,8 @@ void GPIOInits(void)
 	ADCPins.GPIO_PinConfig.GPIO_PinNumber = 5;
 	GPIO_Init(&ADCPins);
 
-	ADCPins.GPIO_PinConfig.GPIO_PinNumber = 7;
-	GPIO_Init(&ADCPins);
+	//ADCPins.GPIO_PinConfig.GPIO_PinNumber = 7;
+	//GPIO_Init(&ADCPins);
 }
 
 void PWM_GPIOInits(void)
@@ -130,9 +115,6 @@ void PWM_GPIOInits(void)
 	GPIO_Init(&PWMPins);
 
 	PWMPins.GPIO_PinConfig.GPIO_PinNumber = 8;
-	GPIO_Init(&PWMPins);
-
-	PWMPins.GPIO_PinConfig.GPIO_PinNumber = 9;
 	GPIO_Init(&PWMPins);
 }
 
@@ -159,10 +141,6 @@ void PWMTIM(void)
 	TIMPWM.TIM_Config.PWM_Channel = 3;
 
 	PWM2_5_Init(&TIMPWM);
-
-	TIMPWM.TIM_Config.PWM_Channel = 4;
-
-	PWM2_5_Init(&TIMPWM);
 }
 
 
@@ -181,8 +159,6 @@ int main(void)
 		ADC_Init_UD(ADC1);
 
 		ADC_Wrist(ADC1);
-
-		ADC_Hand(ADC1);
 
 		ServoHandle();
 	}
