@@ -5,17 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/DualTumbstick.c \
+../Src/stepper_motor_test.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/DualTumbstick.o \
+./Src/stepper_motor_test.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/DualTumbstick.d \
+./Src/stepper_motor_test.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d 
 

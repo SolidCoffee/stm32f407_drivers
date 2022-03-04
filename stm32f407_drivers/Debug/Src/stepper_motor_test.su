@@ -1,0 +1,14 @@
+stm32f407xx_gpio_driver.h:87:6:GPIO_PLCK_Control	16	static
+stm32f407xx_gpio_driver.h:184:6:GPIO_Init	32	static
+stm32f407xx_gpio_driver.h:281:6:GPIO_DeInit	16	static
+stm32f407xx_gpio_driver.h:336:9:GPIO_ReadFromInputPin	24	static
+stm32f407xx_gpio_driver.h:357:10:GPIO_ReadFromInputPort	24	static
+stm32f407xx_gpio_driver.h:366:6:GPIO_WriteToOutputPin	16	static
+stm32f407xx_gpio_driver.h:379:6:GPIO_WriteToOutputPort	16	static
+stm32f407xx_gpio_driver.h:385:6:GPIO_ToggleOutputPin	16	static
+stm32f407xx_gpio_driver.h:392:6:GPIO_IRQITConfig	16	static
+stm32f407xx_gpio_driver.h:432:6:GPIO_IRQPriorityConfig	24	static
+stm32f407xx_gpio_driver.h:442:6:GPIO_IRQHandling	16	static
+stepper_motor_test.c:16:6:delay	16	static
+stepper_motor_test.c:21:6:PWM_GPIOInits	24	static
+stepper_motor_test.c:49:5:main	8	static
